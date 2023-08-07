@@ -10,7 +10,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     City = models.ForeignKey(
         "city",
-        related_name="user_city",
+        related_name="profile_city",
         on_delete=models.CASCADE,
         blank=True,
         null=True,
